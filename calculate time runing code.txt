@@ -1,0 +1,7 @@
+int                 startTime, endTime;
+
+startTime = WinAPI::getTickCount();
+[Perform X++ operations]
+endTime = WinAPI::getTickCount();
+
+info(strFmt('It took %1 minutes', ((endTime - startTime)/1000)/60));
